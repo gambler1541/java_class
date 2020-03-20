@@ -57,7 +57,7 @@
 
 	   |				A | B				A 와 B 중 하나이상이 true 일때 true
 
-	   ||				A || B			앞이 true면 뒤를 검사하지 않음
+	   ||				A || B			(Short circuit Logical Operator) -> 앞이 true면 뒤를 검사하지 않음
 
 	   !				!A				A가 true 이면 false
 									A가 false 이면 true
