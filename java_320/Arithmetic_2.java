@@ -5,24 +5,24 @@ public class  Arithmetic_2
 		int a, b;
 
 		a = 10;
-		b = ++a;
+		b = ++a;  // a = a + 1(연산 후 결과 대입)
 
-		System.out.println("++a: " + a + "b: " + b);
+		System.out.println("++a: " + a + " b: " + b);
 
 
 		a = 10;
 		b = a++;
-		System.out.println("a++: "+a+"b: " + b);
+		System.out.println("a++: "+a+" b: " + b);
 
 
 		a = 10;
-		b = --a;
-		System.out.println("--a: "+a+"b: " + b);
+		b = --a; // a = a - 1
+		System.out.println("--a: "+a+" b: " + b);
 	
 		
 		a = 10;
 		b = a--;
-		System.out.println("a--: "+a+"b: " + b);
+		System.out.println("a--: "+a+" b: " + b);
 	}
 
 }
