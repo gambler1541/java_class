@@ -43,3 +43,21 @@
 	   <=
    	   ==
 	   !=
+
+
+. 논리 연산자( Logical Operator)
+	: 논리 연산자는 두 개의 논리 값을 평가하여 true 또는 false 결과를 반환합니다.
+
+
+	연산자			사용법				      의미
+	   
+	   &				A & B			A와B 모두 true 일때 true	
+
+	   &&			A && B			(Short circuit Logical Operator) -> 앞이 false이면 뒤를 검사하지 않음
+
+	   |				A | B				A 와 B 중 하나이상이 true 일때 true
+
+	   ||				A || B			앞이 true면 뒤를 검사하지 않음
+
+	   !				!A				A가 true 이면 false
+									A가 false 이면 true
