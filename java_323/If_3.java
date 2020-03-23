@@ -1,9 +1,18 @@
+import java.io.*;
+
 public class If_3 
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception
 	{
 
-		int grade = 85;
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		
+		int grade = 0;
+
+		System.out.println("점수를 입력하세요 !! ");
+
+		grade = Integer.parseInt(in.readLine());
 		char cc =  ' ';
 
 
