@@ -55,4 +55,4 @@ public class ShiftTest_2
 		System.out.println(Integer.toBinaryString(temp));
 		System.out.println();
 	}
-}
+}K
