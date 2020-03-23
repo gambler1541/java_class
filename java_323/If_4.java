@@ -10,7 +10,7 @@ public class If_4
 		{
 			System.out.println("처음 오셨군요. 방문해 주셔서 감사합니다.");
 		}
-		;else
+		else
 		{
 			System.out.println("다시 방문해 주셔서 감사합니다.");
 		}
