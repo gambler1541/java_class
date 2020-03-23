@@ -6,7 +6,7 @@ public class If_3
 	{
 
 
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); // 한번에 묶어서 처리(Buffer)
 		
 		int grade = 0;
 
@@ -14,7 +14,8 @@ public class If_3
 
 		grade = Integer.parseInt(in.readLine());
 		char cc =  ' ';
-
+		
+ㅁ
 
 		if (grade >= 90)
 		{

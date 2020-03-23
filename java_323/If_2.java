@@ -1,9 +1,17 @@
+import java.io.*;
+
 public class  If_2
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception
 	{
-		int grade = 85;
 
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		int grade;
+
+		System.out.println("성적을 입력하세요! ");
+
+		grade = Integer.parseInt(in.readLine());
+		
 		if (grade >= 90)
 		{
 			System.out.println("성적은 A입니다.");
