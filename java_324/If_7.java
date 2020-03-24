@@ -8,7 +8,7 @@ public class If_7
 		System.out.print("문자를 입력하세요: ");
 
 		ch = System.in.read();
-
+ 
 		if (ch == 'A' || ch == 'a')
 		{
 			System.out.println("America");
