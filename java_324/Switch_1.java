@@ -7,7 +7,8 @@ public class Switch_1
 
 		System.out.print("1 ~ 9 사이의 값을 입력하세요: ");
 
-		a = System.in.read()-'0';
+		a = System.in.read()-'0';  // .read()메서드는 입력받은 문자를 아스키코드로 저장
+												// 입력받은 숫자의 아스키코드(ex 1(49))에서 '0'(48)을 빼면 내가 원하는 값이 나옴(숫자 1로보임)
 
 
 		/* 
