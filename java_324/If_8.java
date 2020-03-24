@@ -6,11 +6,11 @@ public class If_8
 
 		for (int i = 1; i <= 100 ; i++ )
 		{
-			score = (int)((128-(-75)+1)*Math.random()+(-75));
+			score = (int)((128-75+1)*Math.random()+75);
 
-			System.out.print("\t" +  score);
+			System.out.print("\t" + score);
 
-			if (i % 5 == 0)
+			if (i % 10 == 0)
 			{
 				System.out.println();
 			}
