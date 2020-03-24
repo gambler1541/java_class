@@ -28,5 +28,9 @@ public class For_1
 		System.out.println("짝수 합 = " + even);
 		System.out.println("홀수 합 = " + odd);
 		System.out.println("3의 배수의 합 = " + third);
+
+
 	}
 }
+
+
