@@ -10,7 +10,7 @@ public class Test_2
 		{
 			
 			a += 3;
-			System.out.println( today  + "날  아침" + a);
+			System.out.println( today  + "일날  아침" + a);
 
 			if (a >= 13)
 			{
@@ -18,8 +18,7 @@ public class Test_2
 			}
 		
 			a -= 1;
-			System.out.println( today  + "날  저녁" + a);
-			
+			System.out.println( today  + "일날  저녁" + a);
 			
 			today +=1;
 			

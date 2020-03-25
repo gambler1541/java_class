@@ -15,8 +15,7 @@ public class DoWhile_2
 			input = System.in.read();
 			System.out.print((char)input);
 		}
-		while (input !='x'
-		);
+		while (input !='x');
 
 	}
 }
