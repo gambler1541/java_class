@@ -1,4 +1,4 @@
-public class DoWhile_2 
+public class GuGuDan_5 
 {
 	public static void main(String[] args) 
 	{
@@ -13,9 +13,11 @@ public class DoWhile_2
 				second ++;
 			}
 			while (second <= 9);
+
 			second = 1;
 			first ++;
 			System.out.println();
+
 		}
 		while (first <= 9);
 	}

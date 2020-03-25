@@ -1,14 +1,12 @@
 import java.io.*;
 
-public class GuGuDan_4
+public class  GuGuDan_6
 {
 	public static void main(String[] args) throws Exception
 	{
-
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		
 		int i = 1;
-
+		
 		System.out.print("단수를 입력하세요:");
 		int first = Integer.parseInt(in.readLine());
 		System.out.print("단수를 입력하세요:");
@@ -20,19 +18,21 @@ public class GuGuDan_4
 			first = second;
 			second = tmp;
 		}
-		
 
-		while (first <= second)
-		{	
-			while (i <= 9)
+		do
+		{
+			do
 			{
 				System.out.println(first + "*" + i +"=" + first * i);
 				i++;
 			}
-
-			i = 1;       
+			while (i <= 9);
+			i =1;
 			first++;
 			System.out.println();
 		}
+		while (first <= second);
+		
+
 	}
 }
