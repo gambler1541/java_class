@@ -13,6 +13,7 @@ public class GuGuDan_2
 		System.out.print("단수를 입력하세요:");
 		int j = Integer.parseInt(in.readLine());
 
+		// Swap
 		if (i >= j)
 		{
 			tmp = i;
