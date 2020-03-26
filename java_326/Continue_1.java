@@ -9,7 +9,7 @@ public class Continue_1
 		{
 			if (i % 2 == 0)
 			{
-				continue;
+				continue;	// for문(반복문)의 끝으로 이동
 			}
 			sum += i;
 			System.out.print(i + "\t" );
