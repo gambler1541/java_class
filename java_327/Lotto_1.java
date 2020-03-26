@@ -9,7 +9,7 @@ public class Lotto_1
 		int tmp;
 
 		
-		System.out.print("당첨 번호는> ");
+		System.out.println("당첨 번호는?");
 		for (int i = 0; i <= 44 ; i++ )
 		{
 			number[i] = i + 1;
@@ -25,7 +25,7 @@ public class Lotto_1
 
 		for (int i =1; i <= 6; i++ )
 		{
-			System.out.printf("%d  ",number[i]);
+			System.out.printf("%d\t",number[i]);
 		}
 		System.out.println();
 	}
