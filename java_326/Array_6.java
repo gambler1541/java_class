@@ -19,9 +19,7 @@ public class Array_6
 			{
 				min = score[i];
 			}
-			
-			
-
+		
 		}
 
 		System.out.println("가장 큰 값> " + max);
