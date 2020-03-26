@@ -4,14 +4,13 @@ public class Return_1
 	{
 		int result3, result4;
 
-		result3 = mul(10,20); // return값이 있는 메서드(result3,4에 저장)
-		result4 = div(40 , 4);
-		
+
 		sum(10,20);  // return되지 않는 메서드
 		sub(10,20);
-	
-		System.out.println("10 * 20 = " + result3);
-		System.out.println("40 / 4 = " + result4);
+		mul(10,20);
+		div(40,4);
+
+		result3 = mul(10,20)
 
 	}
 
@@ -27,14 +26,17 @@ public class Return_1
 		return;
 	}
 
-	static int mul(int x, int y)
+	static void mul(int x, int y)
 	{
-		return (x * y);
+	
+		System.out.println("10 * 20 = " + (x *y));
+		return ;
 	}
 
 	
-	static int div(int x, int y)
+	static void div(int x, int y)
 	{
-		return (x / y);
+		System.out.println("40 / 4 = " + (x / y));
+		return;
 	}
 }
