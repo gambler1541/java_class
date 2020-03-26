@@ -11,7 +11,7 @@ public class Break_3
 					for (int k = 0; k < 10 ; k++)
 					{
 						System.out.println(" "+i+" * "+j+" * "+k+" = "+(i*j*k));
-						 break next; // 지정된 next레이블을 벗어남
+						// break next; // 지정된 next레이블을 벗어남
 					}
 				
 				}
