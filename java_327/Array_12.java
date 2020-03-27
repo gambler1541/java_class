@@ -8,7 +8,7 @@ public class Array_12
 			System.exit(0);		// 프로그램을 종료 시킴
 		}
 		int num1 = Integer.parseInt(args[0]);		// 문자를 숫자로 변환
-		char op  =args[1].charAt(1);						// 문자열을 문자(char)로 변환(문자열 중 맨 앞(0)에 있는 문자를 가져옴)
+		char op  =args[1].charAt(0);						// 문자열을 문자(char)로 변환(문자열 중 맨 앞(0)에 있는 문자를 가져옴)
 		int num2 = Integer.parseInt(args[2]);
 
 		int result = 0;
