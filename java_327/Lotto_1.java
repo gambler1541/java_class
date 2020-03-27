@@ -1,4 +1,4 @@
-public class Lotto_1 
+public class Lotto_1
 {
 	public static void main(String[] args) 
 	{
