@@ -30,7 +30,7 @@ public class Array_9
 			*/
 
 			int sum = 0;
-			// 각 total변수에 각 사람의 과목별 점수를 저장
+			// 각 total변수에 모든 사람의 과목별 점수를 저장
 			koreanTotal += score[i][0];
 			englishTotal += score[i][1];
 			mathTotal += score[i][2];
