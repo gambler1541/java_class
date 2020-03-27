@@ -3,7 +3,7 @@ public class Array_9
 	public static void main(String[] args) 
 	{
 		
-		int[][] score = {{33,33,33,33},
+		int[][] score = {{33,33,31,32},
 								 {18,42,75,100},
 								 {36,48,24,13},
 								 {65,24,40,78},
@@ -17,6 +17,8 @@ public class Array_9
 
 		System.out.println("번호\t국어\t영어\t수학\t과학\t총점\t평균");
 		System.out.println("======================================================");
+		
+		// for = 각 행을 순회
 		for (int i = 0;i < score.length ; i++)
 		{
 			/*
@@ -28,7 +30,7 @@ public class Array_9
 			*/
 
 			int sum = 0;
-			// 각 total변수에 모든 사람의 과목별 점수를 저장.
+			// 각 total변수에 각 사람의 과목별 점수를 저장
 			koreanTotal += score[i][0];
 			englishTotal += score[i][1];
 			mathTotal += score[i][2];
