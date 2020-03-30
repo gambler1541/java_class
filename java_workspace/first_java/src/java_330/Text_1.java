@@ -5,8 +5,9 @@ public class Text_1 {
 		  System.out.println("아름다운 대한민국"); 
 		  System.out.println("아름다운 대한민국");
 		  System.out.println("아름다운 대한민국");
-		  System.out.println("아름다운 대한민국");
-		  System.out.println("아름다운 대한민국");
-		 	}
+		  System.out.println("아름다운 대한민국");	  
+		  System.out.println("아름다운");
+		}
+	}
 
-}
+		  
