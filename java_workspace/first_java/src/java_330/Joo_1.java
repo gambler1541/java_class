@@ -9,8 +9,7 @@ public class Joo_1 {
 		
 		for (int i = 0; i < 10000; i++) {
 			
-			++freq[(int)(Math.random()*SIZE)];
-			
+			++freq[(int)(Math.random()*SIZE)];			
 		}
 		
 		System.out.println("=====================================");
