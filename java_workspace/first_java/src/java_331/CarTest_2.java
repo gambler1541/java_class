@@ -54,7 +54,7 @@ public class CarTest_2 {
 		System.out.println("=========================================");
 		System.out.println("car1 color: " + car1.color + 
 						   "\tcar1 gearType: " +car1.gearType+
-						   "\tcar door: " + car1.door);
+						   "\tcar1 door: " + car1.door);
 		
 		
 		System.out.println("car2 color: " + car2.color + 
