@@ -16,6 +16,8 @@ public class StaticRun {
 		Static_1 ss1 = new Static_1();
 		Static_1 ss2 = new Static_1();
 		
+
+		
 		Static_1.num = 77;
 		ss1.num_2 = 88;
 		ss1.a = 33;

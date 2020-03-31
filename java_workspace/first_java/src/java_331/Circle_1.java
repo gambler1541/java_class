@@ -11,7 +11,9 @@ public class Circle_1 {
 		r = 20;
 		
 		double area = PI * r * r;
-		
-		System.out.println("원의 넓이: " + area);
+		double length = 2 * PI * r;
+		 
+		System.out.printf("원의 넓이:%.2f\u33A0\n",area);
+		System.out.printf("원의 둘레:%.2f\u339D", length);
 	}
 }
