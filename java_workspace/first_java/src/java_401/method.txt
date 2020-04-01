@@ -38,6 +38,13 @@ Overloading(오버로딩)
 
 	}
 	
+	. abstract : 추상 메소드 선언에 사용  => 상속과 관련됨
+	. final : 종단 메소드 선언에 사용 => 상속과 관련
+	. static : 클래스 메소드 선언에 사용
+	. synchronized : 쓰레드의 임계 영역 지정에 사용
+	
+	
+	
 	
 	
 	
