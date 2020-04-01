@@ -29,7 +29,7 @@ public class StaticMethodExe {
 		ssm.eng = 65;
 		StaticMethod.math = 90;
 		
-		System.out.println("ЦђБе 11: " + ssm.average());
+		System.out.println("ЦђБе 11: " + StaticMethod.average());
 		System.out.println("ЦђБе 22: " + StaticMethod.average());
 		
 	}
