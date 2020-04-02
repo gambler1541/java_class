@@ -6,11 +6,25 @@ class Tv{
 	int channel;	//  Ã¤³Î
 	
 	
-	void power() { power = !power; }
+	void power() { 
+		power = !power; 
+		}
 
-	void channelUp() { channel++; }
+	void channelUp() {
+		
+		if (power){
+			
+			channel++;
+			}
+		}
 	
-	void channelDown() { -- channel; } 
+	void channelDown() { 
+		
+		if (power) {
+			-- channel; 
+			}
+		
+		}	 
 
 }
 
@@ -31,17 +45,19 @@ public class CaptionTvTest {
 	public static void main(String[] args) {
 		CaptionTv ctv = new CaptionTv();
 		
+		
+		ctv.power();
 		ctv.channel = 11;
 		ctv.channelUp();
-		ctv.channelUp();
-		
+	
 		ctv.caption=true;	
 		System.out.println(ctv.channel);
 		
 		ctv.displayCaption("Hello KBS ~~~");
 		
 		ctv.displayCaption("Hello CNN @@@");
-
+		
+		ctv.power();
 		ctv.channelDown();
 		ctv.channelDown();
 		ctv.channelDown();
