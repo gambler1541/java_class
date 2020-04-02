@@ -32,6 +32,24 @@ Inheritance(상속)
 			}
 			
 			
+
+. 메소드의 Overriding(오버라이딩)
 	
+	: 자바언어는 polymorphism(다형성)을 이용하기 위하여 Overloading과 Overriding을 사용합니다.
+	오버로딩은 같은 클래스안에서 이름이 같은 메소드를 2개 이상 정의 하는 것입니다.
+	반면에 오버라이딩은 상속 관계에 잇는 슈퍼클래스와 서브 클래스에서 같은 이름의 메소드를 정의 하는 것입니다.
+	슈퍼클래스에 있는 메소드의 시그니처와 서브클래스에서 재정의한 메소드의 시그니처가 동일해야 합니다.
+	
+	
+			오버로딩													오버라이딩
+			
+		class AA{												class BB{
+			public void display() {}								public void display() {}
+			public void display() {int a}								}
+			public void display() {char b}						class CC extends BB {
+		}															public void display() {}
+																		}
 			
 	
+			
+	오버라이딩은 기존의 클래스를 이용하여 새로운 클래스를 만들때, 기존 클래스의 메소드와 의미적으로는 같지만 약간의 변화가 필요한 메소드를 만들때 사용합니다.
