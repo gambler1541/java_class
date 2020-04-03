@@ -1,6 +1,8 @@
 package java_403;
 
-final class WordProcess{
+
+// final class WordProcess{
+class WordProcess{
 	
 	void Input() {};
 	void Edit() {};

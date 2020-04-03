@@ -3,7 +3,15 @@ package java_403;
 abstract class 도형{			// 추상 클래스
 	
 	int i = 10;				// 맴버 변수
-	abstract void draw();	// 추상 메소드
+	
+	
+	
+	public void draw()
+	
+	{
+		System.out.println("aa");
+	}
+	
 	
 }
 
@@ -11,7 +19,7 @@ abstract class 도형{			// 추상 클래스
 class 사각형 extends 도형{
 
 	@Override
-	void draw() {
+	public void draw() {
 		System.out.println("사각형을 그립니다.");
 		
 	}
@@ -22,7 +30,7 @@ class 사각형 extends 도형{
 class 삼각형 extends 도형{
 
 	@Override
-	void draw() {
+	public void draw() {
 		System.out.println("삼각형을 그립니다.");
 	}
 }
@@ -30,7 +38,7 @@ class 삼각형 extends 도형{
 class 원형 extends 도형{
 	
 	@Override
-	void draw() {
+	public void draw() {
 		System.out.println("원을 그립니다.");
 	}
 }
@@ -38,7 +46,7 @@ class 원형 extends 도형{
 class 오각형 extends 도형{
 	
 	@Override
-	void draw() {
+	public void draw() {
 		System.out.println("오각형을 그립니다.");
 	}
 }
