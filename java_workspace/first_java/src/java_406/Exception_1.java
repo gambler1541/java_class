@@ -32,14 +32,15 @@ public class Exception_1 {
 				System.out.println(e.getMessage());
 			}
 			
-			catch (Exception e3) {
+			
+			catch (Exception e3) {	// Exception 은 여러 catch문 중 가장 아래에 있어야함
 				e3.printStackTrace();
 			}
+		
 			
 			finally {	// error와 상관없이 항시 나옴
 				System.out.println("항시 나온다~");
 			}
-			
 			
 		}
 	}
