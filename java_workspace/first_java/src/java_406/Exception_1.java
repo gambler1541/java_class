@@ -22,19 +22,19 @@ public class Exception_1 {
 
 			catch (NumberFormatException e2) {
 				System.out.println(" 입력값이 숫자여야 합니다.");
-				
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
 			
 			catch (ArithmeticException e) {
 				System.out.println(" 분모에 0 이 올수 없습니다. ");
-				
 				e.printStackTrace();
 				System.out.println(e.getMessage());
 			}
 			
-			
+			catch (Exception e3) {
+				e3.printStackTrace();
+			}
 			
 			finally {	// error와 상관없이 항시 나옴
 				System.out.println("항시 나온다~");
