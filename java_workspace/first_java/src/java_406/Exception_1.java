@@ -9,7 +9,9 @@ public class Exception_1 {
 		
 		while (true) {
 			
-			try {
+
+			try 
+			{
 				System.out.println("첫번째 값을 입력하세요!!> ");
 				int num1 = Integer.parseInt(input.readLine());
 				
@@ -17,9 +19,9 @@ public class Exception_1 {
 				int num2 = Integer.parseInt(input.readLine());
 				
 				System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
-		
 			}
-
+		
+					
 			catch (NumberFormatException e2) {
 				System.out.println(" 입력값이 숫자여야 합니다.");
 				e2.printStackTrace();
@@ -41,6 +43,8 @@ public class Exception_1 {
 			finally {	// error와 상관없이 항시 나옴
 				System.out.println("항시 나온다~");
 			}
+			
+			System.out.println("adsfkjalkdfhkasdjfklasdjf");
 			
 		}
 	}

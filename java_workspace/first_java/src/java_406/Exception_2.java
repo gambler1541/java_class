@@ -15,7 +15,8 @@ public class Exception_2 {
 		
 		catch (Exception e) 
 		{
-			e.printStackTrace();
+//			e.printStackTrace();
+			System.out.println(e.getMessage());
 			System.out.println(5);
 			System.out.println(6);
 		}
