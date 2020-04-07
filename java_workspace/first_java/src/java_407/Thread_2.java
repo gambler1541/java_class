@@ -19,7 +19,6 @@ class Thread_Exe_2 extends Thread{
 
 }
 
-
 public class Thread_2 {
 	public static void main(String[] args) {
 
