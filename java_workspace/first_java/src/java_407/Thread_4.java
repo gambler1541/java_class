@@ -24,9 +24,9 @@ public class Thread_4 {
 		Thread_Exe_4 obj2 = new Thread_Exe_4("보보통 우선 순위");
 		Thread_Exe_4 obj3 = new Thread_Exe_4("최저저저 우선 순위");
 
-		obj1.setPriority(Thread.MAX_PRIORITY);
-		obj2.setPriority(Thread.NORM_PRIORITY);
-		obj3.setPriority(Thread.MIN_PRIORITY);
+		obj1.setPriority(10);
+		obj2.setPriority(7);
+		obj3.setPriority(3);
 		
 		
 		obj3.start();
