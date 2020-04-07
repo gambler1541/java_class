@@ -91,6 +91,36 @@ Thread(스레드)
 			 static int MIN_PRIORITY	: 스레드가 가지는 최소 우선순위값
 			 static int NORM_PRIORITY	: 스레드가 가지는 보통 우선순위값
 					
+
+
+
+		. Runnable 인터페이스 사용
+			: 이미 다른 클래스를 상속 받아 Thread  클래스를 상속 받지 못할때 Runnable 인터페이스를 이용합니다.
 			
+			
+		
+		. Runnable 사용 방법
+		
+		1. Runnable 인터페이스를 implements 하는 클래스를 정의한다.
+		2. Runnable 인터페이스의 run() 메소드를 재정의 한다.
+		
+		class RunnableTest implements Runnable 	// Runnable 인터페이스 상속
+			{
+				public void run()				// run() 메소드 재정의
+				.../
+			}
+
+		3. main() 메소드에서 Runnable 인터페이스를 구현할 클래스 객체를 생성한다.
+		4. Thread 클래스 객체를 생성하면서 생성자에 3. 에서 생성한 객체를 매개 변수로 전달
+		5. 4. 에서 생성한 객체를 사용해 start() 메소드 호출
+		
+			public static void main(String[] args)
+				{
+					RunnableTest obj = new RunnableTest();	// 객체생성
+					Thread thread = new Thread(obj);		// Thread 클래스 객체 생성
+					thread.start();							// start 메소드 호출
+				}
+
+
 			
 			
