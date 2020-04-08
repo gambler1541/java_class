@@ -65,19 +65,19 @@ class ATM_USER extends Thread {
 public class MyAtm {
 	public static void main(String[] args) {
 
-//		ATM atm = new ATM(10000);	// 계좌에 10000원이 들어 있음
-//		
-//		ATM_USER user1 = new ATM_USER(atm, "이낙연");
-//		ATM_USER user2 = new ATM_USER(atm, "황교안");
-//		ATM_USER user3 = new ATM_USER(atm, "허경영");
-//		
+		ATM atm = new ATM(10000);	// 계좌에 10000원이 들어 있음
+		
+		ATM_USER user1 = new ATM_USER(atm, "이낙연");
+		ATM_USER user2 = new ATM_USER(atm, "황교안");
+		ATM_USER user3 = new ATM_USER(atm, "허경영");
+		
 		
 	
 	
-//		user1.start();
-//		user2.start();
-//		user3.start();
-//		
+		user1.start();
+		user2.start();
+		user3.start();
+		
 		
 	}
 

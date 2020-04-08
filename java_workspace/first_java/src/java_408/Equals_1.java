@@ -16,7 +16,7 @@ public class Equals_1 {
 	public static void main(String[] args) {
 		
 		
-		String obj1 = "Korea seoul";
+		String obj1  = "Korea seoul";
 		String obj2 = "Korea seoul";
 		String obj3 = new String("Korea seoul");
 		
