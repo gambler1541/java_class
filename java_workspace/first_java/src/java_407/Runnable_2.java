@@ -27,7 +27,12 @@ public class Runnable_2 {
 	public static void main(String[] args) {
 		
 		Runnable2_1 obj1 = new Runnable2_1("첫 번째");
+		
 		Thread thread1 = new Thread(obj1);
+		
+		
+		
+		
 		Runnable2_1 obj2 = new Runnable2_1("두두 번째");
 		Thread thread2 = new Thread(obj2);
 		Runnable2_1 obj3 = new Runnable2_1("세세세 번째");

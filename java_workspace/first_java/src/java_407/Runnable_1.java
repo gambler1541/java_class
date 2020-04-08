@@ -22,6 +22,7 @@ public class Runnable_1 {
 	public static void main(String[] args) {
 		
 		RunnableTest_1 runn = new RunnableTest_1();
+
 		Thread thread = new Thread(runn);
 		
 		thread.start();

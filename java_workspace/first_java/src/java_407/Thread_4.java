@@ -26,7 +26,7 @@ public class Thread_4 {
 
 		obj1.setPriority(10);
 		obj2.setPriority(7);
-		obj3.setPriority(3);
+		obj3.setPriority(1);
 		
 		
 		obj3.start();

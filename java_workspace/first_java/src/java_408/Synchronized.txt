@@ -1,0 +1,19 @@
+Synchronized (동기화)
+
+		동기화 처리 방법
+		
+1.	공유 데이터에 접근하는 메소드를 Synchronized 키워드로 처리합니다.
+
+	synchronized method()
+	{
+		공유 데이터 접근;
+	}
+	
+2.	공유 데이터에 접근하는 영역을 synchronized 키워드로 블록화 처리합니다.
+	
+	이때 공유 자원을 갖고있는 클래스 객체를 사용합니다.
+	
+		synchronized(사용할 객체)
+		{
+			처리할 블럭;
+		}

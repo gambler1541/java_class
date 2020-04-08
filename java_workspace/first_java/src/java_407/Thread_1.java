@@ -15,11 +15,10 @@ class Thread_Exe extends Thread {
 			
 			System.out.println(e.getMessage());
 		}
-	}
 	
+	}
+
 }
-
-
 
 
 public class Thread_1 {
