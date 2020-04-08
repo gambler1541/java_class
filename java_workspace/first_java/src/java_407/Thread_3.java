@@ -8,7 +8,6 @@ class Thread_Exe_3 extends Thread{
 	
 	@Override
 	public void run() {
-	
 		try {
 			
 			for (int i = 0; i < 5; i++) {
@@ -16,13 +15,11 @@ class Thread_Exe_3 extends Thread{
 				Thread.sleep(1000);
 				System.out.println(i + " 번 " + getName() + " 쓰레드 ");
 			}
-			
 		} catch (InterruptedException e) {
 
 			System.out.println(e.getMessage());
 		}
 	}
-	
 }
 
 

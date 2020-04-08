@@ -16,7 +16,7 @@ class ATM{
 		if ((total - amount) > 0) {
 			total -= amount;
 			System.out.println(name + " 님 출금 금액 " + amount + "원");
-		}
+		} 	
 		else {
 			System.out.println(name + " 님 잔액이 부족해 출금할 수 없습니다.");
 		}
