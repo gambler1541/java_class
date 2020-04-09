@@ -22,5 +22,7 @@ public class Wrapper_1 {
 		System.out.println(total + ">> 2 진수 : " + Integer.toBinaryString(total));
 		System.out.println(total + ">> 8 진수 : " + Integer.toOctalString(total));
 		System.out.println(total + ">> 16 진수 : " + Integer.toHexString(total));
+		System.out.println("가장 큰 값 : " + Integer.MAX_VALUE);
+		System.out.println("가장 작은 값 : " + Integer.MIN_VALUE);
 	}
 }
