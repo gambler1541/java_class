@@ -1,0 +1,27 @@
+String
+	: 자바에서 문자열을 저장하는데 사용되는 객체는 String, StringBuilder, StringBuffer 세가지가 있습니다.
+	문자는 char cc = 'A' 처럼 작은 따옴표를 사용하지만, 문자열은 String str = "seoul" 처럼 큰 따옴표로 처리합니다.
+	프로그램에서 문자열을 많이 사용해 String 클래스를 마치 기본자료형 처럼 사용됩니다.
+	String 클래스는 한번 생성되면 변하지 않는 문자열 즉 상수 문자열을 처리하는 클래스 입니다.
+	계속 변하는 문자열은 StringBuffer 클래스를 이용해 처리하는 것이 좋습니다.
+	자바는 String 클래스를 사용할때 내부적으로 StringBuffer 클래스로 변형되어 처리합니다.
+	
+		문자열 저장 객체 비교
+		
+								특징							성능					메모리
+			
+		String				불변하는 문자열 저장시 사용				가장 낮다	
+		
+		String에서 저장되는 문자열은 알고보면 char의 배열형태로 저장되며 이 값들은 외부에서 접근할 수 없도록 private로 보호된다.
+		또한 final형이기 때문에 초기값으로 주어진 String의 값은 불변으로 바뀔 수가 없게 되는 것이다.
+		
+		
+		StringBuilder		수시로 변하는 문자열 사용시 사용			가장 높다
+		
+		StirngBuffer		다른 스레드간 동기화가 필요한경우
+							StringBuilder 대신 사용
+							
+							
+		StringBuilder는 변경가능한 문자열이지만 synchronizetion이 적용되지 않았다.
+		하지만 StringBuffer는 thread-safe라는 말에서처럼 변경가능하지만 multiple thread환경에서 안전한 클래스라고 한다.
+		이것이 StringBuilder와 StringBuffer의 가장 큰 차이점이다.

@@ -29,7 +29,8 @@ public class Wrapper_8 {
 		for (int i = 0; i < 300; i++) {
 			System.out.println("BByte : " + ++bbb_2 + ", int_2 : " + ++ii_2);
 			
-			
 		}
 	}
 }
+
+

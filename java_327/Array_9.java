@@ -29,7 +29,9 @@ public class Array_9
 			  {50,50,50,50}};
 			*/
 
+			// sum 초기화
 			int sum = 0;
+			
 			// 각 total변수에 모든 사람의 과목별 점수를 저장
 			koreanTotal += score[i][0];
 			englishTotal += score[i][1];
