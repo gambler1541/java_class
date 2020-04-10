@@ -18,13 +18,25 @@ public class String_6 {
 //		System.out.println(str.substring(4,7));
 
 		
+//		for (int i = 0; i < juju.length; i++) {
+//			if (juju[i].substring(6,7).equals("1")) {
+//				System.out.println(juju[i] + " 남자입니다.");		
+//			}
+//			else {
+//				System.out.println(juju[i]+ " 여자입니다.");
+//			}
+//		}
+		
 		for (int i = 0; i < juju.length; i++) {
-			if (juju[i].substring(6,7).equals("1")) {
-				System.out.println(juju[i] + " 남자입니다.");		
+			
+			if (juju[i].indexOf("1",6) == 6 || juju[i].indexOf("3",6) == 6) {
+				System.out.println(juju[i] + " 남자");
 			}
 			else {
-				System.out.println(juju[i]+ " 여자입니다.");
+				System.out.println(juju[i] + " 여자");
 			}
 		}
+		
+		
 	}
 }
