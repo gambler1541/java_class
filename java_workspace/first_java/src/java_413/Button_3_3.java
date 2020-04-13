@@ -19,15 +19,16 @@ public class Button_3_3{
 		for (int i = 0; i < 50; i++) {
 			lbl[i] = new Label(i + "·¹ÀÌºí");
 			btn[i] = new Button(i + "¹öÆ°");
-
+			
+			// ³ë¶û	
 			lbl[i].setBackground(new Color((int)((255-190+1)*Math.random()+190),
-					(int)((255-190+1)*Math.random()+190),
-					(int)(Math.random()*60)));
-			// ³ë¶û
-			btn[i].setBackground(new Color((int)((255-190+1)*Math.random()+190),
-					(int)(Math.random()*60), 
-					(int)(Math.random()*60)));
+										   (int)((255-190+1)*Math.random()+190),
+										   (int)(Math.random()*60)));
 			// »¡°­ 
+			btn[i].setBackground(new Color((int)((255-190+1)*Math.random()+190),
+										  (int)(Math.random()*60), 
+										  (int)(Math.random()*60)));
+			
 			ff.add(lbl[i]);
 			ff.add(btn[i]);
 		}
