@@ -11,9 +11,9 @@ public class Button2_2 {
 		Button btn1,btn2,btn3;
 		
 		Frame ff = new Frame("가위 바위 보~~~");
-
+		
 		ff.setLayout(new FlowLayout());
-
+		
 		lbl1 = new Label("가위");
 		lbl2 = new Label("바위");
 		lbl3 = new Label("보");
@@ -31,7 +31,6 @@ public class Button2_2 {
 
 		ff.setSize(300, 200);
 		ff.setVisible(true);
-
-
+		
 	}
 }
