@@ -13,8 +13,7 @@ public class GregorianCalendar_1 {
 		prn((gcal.get(Calendar.MONTH )+ 1) + "월");
 		prn(gcal.get(Calendar.DATE) + "일");
 		
-		
-		if (gcal.isLeapYear(gcal.get(Calendar.YEAR))) {
+		if (gcal.isLeapYear(1992)) {
 			
 			// isLeapYear()	: 윤년이면 true 반환
 			prn("\n 윤년 입니다.~~~");
