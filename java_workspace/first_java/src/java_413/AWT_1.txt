@@ -19,3 +19,33 @@ AWT(Abstratc Windows Toolkit)
 	Java2에 새롭게 추가된 GUI 패키지인 Swing은 운영체제에 상관없이 동일하게 작동하고 AWT에 비해 상당히 많은 메모리를 차지 합니다.
 	또한 AWT를 확장해 만들었기 때문에 AWT를 알아야 자세히 알수 있습니다.
 	
+	
+	
+	. AWT Package
+		: 자바는 GUI 를 처리하기 위해 AWT 패키지를 제공합니다.
+		
+		
+				 Object
+				       ㅣ
+				Component 
+	ㅣ		      ㅣ		ㅣ			     ㅣ			              ㅣ			ㅣ		       ㅣ			     ㅣ
+  Button	Canvas	  Choice	   Container	          Label	       List		Scrollbar	TextComponent
+					  				            ㅣ  															 ㅣ
+					  				Window Panel Scrollpane 									Text Area Text Field
+					  				    ㅣ  
+					  			Dialog	Frame
+					  			   ㅣ
+					  		FileDialog
+					  
+					  
+					  
+					  
+					  
+	. AWT를 사용하여 GUI 프로그램 작성과정
+	
+		.컴포넌트를 생성
+			 |
+			 컴포넌트를 컨테이너에 담음
+			 |
+			 컴포넌트에 대한 이벤트를 처리
+				 
