@@ -16,11 +16,10 @@ public class Frame_3 {
 		
 		Dimension screenSize = ttk.getScreenSize();
 		// 화면의 크기를 구한다.
-		
-		ff.setLocation(screenSize.width / 2 - 200, screenSize.height / 2 - 150);
+		System.out.println(screenSize);
+		ff.setLocation((screenSize.width * 3 / 4)  - 200, (screenSize.height * 1 / 4) - 150);
 		
 		ff.setVisible(true);
-		
 		
 	}
 }
