@@ -29,7 +29,6 @@ public class Checkbox3_3 {
 		os2 = new Checkbox("윈도우 XP");
 		os2.setBackground(new Color(255,180,0));
 		os2.setForeground(new Color(0,120,255));
-
 		os3 = new Checkbox("윈도우 10");
 
 		ff.add(os1); ff.add(os2); ff.add(os3);
