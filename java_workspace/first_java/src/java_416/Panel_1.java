@@ -6,7 +6,7 @@ import java.awt.Frame;
 import java.awt.Label;
 import java.awt.Panel;
 
-public class Pannel_1 extends Frame{
+public class Panel_1 extends Frame{
 	public static void main(String[] args) {
 		
 		Frame ff = new Frame("Panel Test~~");
