@@ -44,7 +44,7 @@ public class Panel_1 extends Frame{
 		ff.add(p3);
 		
 		
-		ff.setVisible(true);
+		ff.setVisible(false);
 	}
 	
 }

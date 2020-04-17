@@ -13,7 +13,7 @@ public class BorderLayout_2 extends Frame {
 		super(str);
 		
 		Panel pp = new Panel();
-//		pp.setBackground(new Color(0,100,255));
+		pp.setBackground(new Color(0,100,255));
 		
 		pp.setLayout(new GridLayout(3,1));
 		

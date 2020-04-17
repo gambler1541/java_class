@@ -11,11 +11,11 @@ public class FlowLayout_1 extends Frame {
 	
 	public FlowLayout_1(String name) {
 		super(name);
-		setLayout(flo);
+//		setLayout(flo);
 		
 		for (int i = 0; i < 10; i++) {
 			btn[i] = new Button(i + "¹öÆ°");
-			add("Center",btn[i]);
+			add(btn[i]);
 		}
 		
 		setBounds(200, 200, 150, 300);
