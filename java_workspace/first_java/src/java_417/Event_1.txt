@@ -13,7 +13,7 @@ Event(이벤트)
   페키지를 제공하고 위임형 이벤트 모델(Delegation Event Model)을
   사용해 이벤트를 처리합니다.
   
-  event handling(이벤트 헨들링)
+  event handling(이벤트 핸들링)
   
   :event 란 사용자 또는 프로그램 코드에 의해 발생할수 있는 사건을
   말합니다.예를 들면 사용자가 마우스를 움직이거나,키보드를 눌렀을때
