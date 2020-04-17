@@ -43,13 +43,15 @@ public class CardLayout_1 {
 		class Handler extends MouseAdapter {
 
 			public void mouseClicked(MouseEvent e) {
-				
+					
 				// 마우스 오른쪽 버튼이 눌렀을대
 				if(e.getModifiers()==e.BUTTON3_MASK) {
 					card.previous(ff);	// CardLayout의 이전 Panel을 보여줌
+					System.out.println(e.getSource());
 				}
 				else {
 					card.next(ff); // CardLayout의 이후 Panel을 보여줌
+					System.out.println(e.getSource());
 				}
 			}
 
