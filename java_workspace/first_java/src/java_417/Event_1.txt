@@ -1,0 +1,163 @@
+Event(이벤트)
+
+:이벤트는 GUI(Graphical User Interface) 프로그램에서
+ 가장 중요한 개념으로 사용자가 입력 장치(키보드,마우스)등을 이용해
+  발생하는 사건을 말합니다. 이벤트를 처리하는 GUI 프로그램은
+  이벤트가 발생할때 까지 무한 루프를 돌면서 대기 상태에 있게 됨니다.
+  이런 상태에서 이벤트가 발생하면 그 이벤트에 따라 특정 작업을
+  수행 합니다. 이벤트와 관련된 기능은 GUI 운영체제에서 지원되며
+  이벤트 처리를 기본으로 하는 프로그램 작성 방법을 
+  이벤트 지향(Event-driven)프로그래밍 기법 이라고 부릅니다.
+  
+  자바에서 이벤트 관련 프로그램을 작성하기 위해 java.awt.event.* 
+  페키지를 제공하고 위임형 이벤트 모델(Delegation Event Model)을
+  사용해 이벤트를 처리합니다.
+  
+  event handling(이벤트 헨들링)
+  
+  :event 란 사용자 또는 프로그램 코드에 의해 발생할수 있는 사건을
+  말합니다.예를 들면 사용자가 마우스를 움직이거나,키보드를 눌렀을때
+    또는 Frame의 크기를 변경할때 이벤트가 발생합니다.
+    
+    
+    . Event Source :  이벤트가 발생한 컴포넌트, 사용자가 버튼을 
+  					눌렸을때 이벤트가 발생하고 버튼은 이 이벤트
+  					소스가 된다.
+    
+    
+    . Event Handler  :  이벤트가 발생했을때 실행될 코드를  구현해
+  						놓은 클래스
+    								    
+    . Event Listener  : 이벤트를 감지하고  처리한다.
+  					 이벤트 헨들러를 이벤트 리스너로 이벤트 소스에
+  					 연결해야 이벤트가 발생했을때 이벤트가 처리된다.
+  
+  
+  						 
+   .이벤트에 대한 수행코드를 작성하여 이벤트 소스에 이벤트 리스너로
+    등록되는 것을 이벤트처리(event handler)라고 한다. 이벤트가 
+발생하더라도 그에 대한 이벤트 처리를 하지 않으면, 아무 일도 일어나지
+ 않는다.
+       
+    사용자가 AWT  프로그램을 사용하면서 행하는 모든 동작은
+    이벤트를 발생 시킨다. 하지만 그에 대한 이벤트를 처리하지 않아
+     이벤트가 발생한 사실을 사용자가 알지 못한다.
+  
+   
+       컴포넌트와  이벤트
+       
+     : 컴포넌트에 따라 발생 가능한 이벤트가 달라집니다.
+       
+    
+    			Action event  Adjustment event  Component event Container event	 Focus event 	Item event	 Key event  Mouse event	MouseMotion event	Text event	Window event
+    Button			O									O							O							O			O				O	
+    Checkbox											O							O				O			O			O				O
+    Choice												O							O				O			O			O				O
+    Component   										O							O							O			O				O		
+    Frame												O				O			O							O			O				O								O
+    Label												O							O							O			O				O	
+    List	        O									O							O				O	
+    Panel												O				O			O							O			O		   		O	
+    Scrollbar						O					O											O										O				O					
+    TextArea											O							O							O			O				O				O			
+    TextField		O									O							O							O			O				O				O	
+    Window												O				O			O							O			O				O								O		
+       
+  
+  이벤트의 종류
+  
+  . ActionEvent : 버튼 클릭, 리스트 항목의 더블클릭, 메뉴 항목의 선택, 텍스트 필드에서 Enter키를 눌렀을때
+  
+  . Adjustment 	: 사용자가 스크롤바를 움직였을때 발생
+  
+  . ComponentEvent : 컴포넌트가 사라지거나 나타날때, 컴포넌트의 이동및 크기 조절시에 발생
+  
+  . FocusEvent	: 컴포넌트가 촛점(Focus)를 얻거나 잃었을때 발생 
+  
+  . ItemEvent	: 체크박스 ,선택버튼, 리스트의 한 항목이 선택되었을때 메뉴의 항목이 선택되거나 해지될때 발생
+  
+  . KeyEvent	: 키보드로 부터 입력이 발생할때 발생
+  
+  . MouseEvent	: 마우스 버튼을 클릭할떄, 누를때, 놓을때, 컴포넌트 영역에 들어갈떄, 나올때 발생
+  
+  . MouseMotionEvent : 마우스 드래그와 이동시 발생
+
+  . TextEvent	: TextArea, TextField 에서 값이 입력될때 발생
+  
+  . WindowEvent	: 윈도우가 활성화(Activate), 비활성화, 아이콘화, 아이콘에서 복귀될때, 윈도우의 오픈,종료시 발생 
+  
+  
+  이벤트 처리 방법
+  : 컴포넌트 객체에서 이벤트가 발생하면 컴포넌트는 이벤트 소스가 되고 리스너가 이벤트를 처리하도록 해야 합니다.
+  자바는 이벤트 리스너를 만들기위해 인터페이스를 사용합니다.
+  각 이벤트에 따라 등록해야 하는 인터페이스가 있고 이를 Listener 라 합니다.
+  이러한 인터페이스 들은 "이벤트이름 + Listener" 형태로 되어 있습니다.
+  
+  ActionListener, MouseListener 등이 있습니다.
+  이벤트 리스너는 이벤트와 관련된 인터페이스를 상속 받아 구현해야 합니다.
+  
+  순서
+  
+  1. java.awt 와 java.awt.event 패키지를 import 합니다.
+  
+  	java.awt.*;
+  	java.awt.event.*;
+  	
+  2. 리스너 인터페이스를 상속받아 이벤트 리스너를 구현합니다.
+  	이때 인터페이스에 있는 메소드를 재정의 합니다.
+  	
+  	class Event extends Frame implements ActionListener
+  	{
+  		public void actionPerformed(ActionEvent e)
+  		{
+  			...;
+  		}
+  	}
+  	
+  3. AWT 컴포넌트를 생성 합니다.
+  	
+  	Button btn = new Button("버튼");
+  	
+  4. 컴포넌트의 종류에 따라 해당 리스너 객체를 등록합니다.
+  
+  	btn.addActionListener(this);	
+  	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
