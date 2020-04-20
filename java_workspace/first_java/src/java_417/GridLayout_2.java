@@ -16,7 +16,7 @@ public class GridLayout_2 extends Frame{
 		
 		super(str);
 		
-		setLayout(new GridLayout(3,2));
+		setLayout(new GridLayout(4,2));
 		List list = new List(5, false);
 		Choice choice = new Choice();
 		Panel panel = new Panel();

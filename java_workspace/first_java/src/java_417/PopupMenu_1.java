@@ -53,7 +53,7 @@ public class PopupMenu_1 extends Frame implements MouseListener{
 	@Override
 	public void mousePressed(MouseEvent e) {	// 마우스 누르기
 		popup.show(txt, e.getX(), e.getY());
-		System.out.println(" "+ txt + " : " + e.getX() + ","+e.getY());
+//		System.out.println(" "+ txt + " : " + e.getX() + ","+e.getY());
 	}
 
 	@Override

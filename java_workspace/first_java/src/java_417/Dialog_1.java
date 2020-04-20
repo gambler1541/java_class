@@ -10,9 +10,10 @@ public class Dialog_1 {
 	public static void main(String[] args) {
 		
 		Frame ff = new Frame("Dialgo Test");
-		ff.setSize(300, 200);	
+		//ff.setSize(300, 200);	
 		
-		Dialog info = new Dialog(ff, "货肺款 家侥", false);
+		Dialog info = new Dialog(ff, "货肺款 家侥", false
+				);
 		
 		info.setSize(140,90);
 		info.setLocation(70,70);

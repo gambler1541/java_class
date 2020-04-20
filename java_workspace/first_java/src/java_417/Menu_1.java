@@ -11,8 +11,7 @@ public class Menu_1 extends Frame{
 		
 		MenuBar mb = new MenuBar();
 		Menu file = new Menu("파일");
-		
-		MenuItem file_new = new Menu("새 파일");
+		Menu file_new = new Menu("새 파일");
 		MenuItem file_open = new MenuItem("불러오기");
 		MenuItem file_close = new MenuItem("파일닫기");
 		
