@@ -10,7 +10,6 @@ import java.awt.event.ActionListener;
 
 public class ActionEvent_5 extends Frame implements ActionListener{
 	List list;
-	Label lbl_info;
 	Panel panel;
 	TextArea lbl_info2;
 	
@@ -33,7 +32,6 @@ public class ActionEvent_5 extends Frame implements ActionListener{
 		
 		panel.add(list);
 		
-		lbl_info = new Label("		");
 		lbl_info2 = new TextArea("~ ");
 		list.addActionListener(this);
 		
@@ -55,7 +53,6 @@ public class ActionEvent_5 extends Frame implements ActionListener{
 		String[] list_1 = list.getSelectedItems();
 		for (int i = 0; i < list_1.length; i++) {
 			lbl_info2.append(list_1[i] + " Âï°í ~~~~\n");
-			System.out.println(list_1[i] + " Âï°í ~~~~");
 		}
 		
 		
