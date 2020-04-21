@@ -7,6 +7,9 @@ import java.awt.Frame;
 import java.awt.Label;
 
 public class Dialog_1 {
+	
+	
+	
 	public static void main(String[] args) {
 		
 		Frame ff = new Frame("Dialgo Test");
