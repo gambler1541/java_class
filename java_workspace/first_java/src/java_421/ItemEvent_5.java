@@ -91,12 +91,13 @@ public class ItemEvent_5 extends Frame implements ItemListener{
 
 		for (int i = 0; i < cpu.length; i++) {
 			if (cpu[i].getState()) {
-				msg += ", CPU : " + cpu[i].getLabel() + " 입니다 그리고";
+				msg += ", CPU : " + cpu[i].getLabel() + " 입니다.";
 			}
 		}
+		msg += "좋아하는 꽃은 ";
 		for (int i = 0; i < flower.length; i++) {
 			if (flower[i].getState()) {
-				msg += "좋아하는 꽃은 " + flower[i].getLabel() + "입니다.";
+				msg += flower[i].getLabel() + "입니다.";
 			}
 		}
 		

@@ -46,7 +46,7 @@ class MyFrame extends Frame {
 		lSpeed.setLocation(20, 40);
 		
 		sbb.setSize(20, 300);
-		sbb.setLocation(250, 20);
+		sbb.setLocation(330, 40);
 		
 		add(sbb);
 		add(lSpeed);
