@@ -1,0 +1,32 @@
+Graphics Class
+
+java.awt 패키지에 잇는 Graphics 클래스에는 다양한 그래픽 기능을 제공합니다.
+
+그래픽 기능은 Applet, Frame, Canvas, Panel 등의 컴포넌트에서만 가능합니다.
+
+Graphics 는 다양한 그리기 메소드를 제공하고 화면에 그림을 출력하고 싶을때 paint() 메소드에서 Graphics 클래스의 메소드를 사용해 그림을 그립니다.
+
+만약 화면에 도형(원, 다각형, 직선) 을 출력하고 싶다면 그래픽의 출력은 repaint() -> update() -> paint() 메소드가 차례대로 호출되어 처리 됩니다.
+
+사용자가 repaint() 메소드를 호출하면 JVM은 paint() 메소드를 직접 호출하지 않고 update() 메소드를 호출한 다음 paint() 메소드를 호출합니다.
+
+paint() 메소드는 필요에 따라 자동 호출됩니다.
+(컴포넌트가 다시 그려질 필요가 있을때)
+
+public void repaint() 
+{
+	update(Graphics g)메소드를 호출합니다.
+}
+
+public void update(Graphics g)
+{
+	repaint()  의해 paint()메소드가 호출되기 직전에 호출 됩니다.
+	update()는 화면을 깨끗이 지우고 paint()를 호출합니다.
+	만약 update()를 호출하지 않고 paint()를 호출하면 화면에 그림이 중복되어 나타납니다.
+	update()는 더블 버퍼링과 같은 다양한 그래픽 처리를 할수 있습니다.
+}
+
+public void paint(Graphics g)
+{
+	실제 그림을 그리는 역할을 수행 합니다.
+}

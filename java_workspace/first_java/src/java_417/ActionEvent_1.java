@@ -6,6 +6,8 @@ import java.awt.Label;
 import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.logging.Handler;
 
 public class ActionEvent_1 extends Frame implements ActionListener{
@@ -24,7 +26,9 @@ public class ActionEvent_1 extends Frame implements ActionListener{
 		btn1.addActionListener(this);			// Button에 listener를 사용(This => 자기 자신에서 찾음)
 		btn2.addActionListener(this);			// new Handler => 새 Handler클래스를 생성해서 사용
 		btn3.addActionListener(this);
-		Panel panel = new Panel();		
+		Panel panel = new Panel();
+		
+		addWindowListener(new Handler());
 		
 		panel.add(btn1);
 		panel.add(btn3);
@@ -79,6 +83,13 @@ public class ActionEvent_1 extends Frame implements ActionListener{
 		else {
 			lbl_info.setText("가운데 버튼이 눌렸습니다.");
 			System.out.println("가운데 버튼이 눌렸습니다.");
+		}
+	}
+	
+	class Handler extends WindowAdapter{
+		@Override
+		public void windowClosing(WindowEvent e) {
+			System.exit(0);;
 		}
 	}
 
