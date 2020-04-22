@@ -1,0 +1,21 @@
+Adapter 클래스
+
+이벤트 리스너를 만들기 위해서는 리스너 인터페이스를 상속 받아 해당 인터페이스에 있는 메소드를 재정의 해야 합니다.
+해당 인터페이스에 들어 있는 메소드가 많을 경우 사용하지 않더라도 메소드는 반드시 기술해야 합니다.
+
+하지만 모든 이벤트를 처리하지 않고 단지 한 두개 정도만 처리할때 모든 메소드를 재 정의 하는 것은 번거로운 일 입니다.
+
+Adapter 클래스는 재정의 할 메소드가 여러개인 인터페이스를 사용할때 보다 쉽게 프로그래밍 할 수 있도록 해주는 추상화 클래스 입니다.
+재정의 할 메소드가 한개인 인터페이스는 Adpter 클래스가 존재 하지 않고 2개 이상인 인터페이스에는 "이벤트 이름 + Adapter" 형식의 클래스가 존재합니다.
+
+Event				Listener InterFace		Adapter Class
+
+ComponentEvent		ComponentListener		ComponentAdapter
+ContainerEvent		ContainerListener		ContainerAdpter
+FocusEvent			FocusListener			FocusAdapter
+KeyEvent			keyListener				KeyAdapter
+MouseEvent			MouseListener			MouseAdpter
+MouseMotionEvent	MouseMotionListener		MouseMotionAdapter
+WindowEvent			WindowListener			WindowAdapter
+
+
