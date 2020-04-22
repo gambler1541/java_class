@@ -23,8 +23,8 @@ public class TextEvent_2 extends Frame {
 		txt.addTextListener(new Handler());
 		txt.addActionListener(new Handler());
 		
-		txt_area.setFocusable(false);
-		txt_area.setEditable(false);
+		txt_area.setFocusable(false);	// 비활성화
+		txt_area.setEditable(false);	// 글 수정 불가능
 		
 		add("North", new Label(" 글자를 입력 하고 Enter"));
 		add("Center", txt_area);
