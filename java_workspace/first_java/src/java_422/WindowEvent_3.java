@@ -27,6 +27,7 @@ public class WindowEvent_3 extends Frame  {
 	}
 
 	class WindowHandler extends WindowAdapter{
+		
 		@Override
 		public void windowClosing(WindowEvent e) {
 			String msg = "";
