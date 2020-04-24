@@ -38,8 +38,10 @@ public class Image_2 extends Frame implements ActionListener  {
 	public Image_2(String title) {
 		super(title);
 		
-		img = Toolkit.getDefaultToolkit().getImage(ss);
 		
+		// 로컬 경로 이미지를 얻어 내는 메서드(ss => 로컬 경로 파일) image를 객체화
+		img = Toolkit.getDefaultToolkit().getImage(ss);
+		System.out.println(img);
 		canvas = new XCanvas_3();
 		canvas.setSize(550, 450);
 		
@@ -86,18 +88,23 @@ public class Image_2 extends Frame implements ActionListener  {
 		
 		if (obj == btn[0]) {
 			message = 기본;
-			
-		}else if (obj == btn[1]) {
+		}
+		else if (obj == btn[1]) {
 			message = 확대;
-		}else if (obj == btn[2]) {
+		}
+		else if (obj == btn[2]) {
 			message = 축소;
-		}else if (obj == btn[3]) {
+		}
+		else if (obj == btn[3]) {
 			message = 상하;
-		}else if (obj == btn[4]) {
+		}
+		else if (obj == btn[4]) {
 			message = 좌우;
-		}else if (obj == btn[5]) {
+		}
+		else if (obj == btn[5]) {
 			message = 전부;
-		}else {
+		}
+		else {
 			ss = txt.getText();
 			img = Toolkit.getDefaultToolkit().getImage(ss);
 		}
@@ -112,35 +119,32 @@ public class Image_2 extends Frame implements ActionListener  {
 			case 기본:
 				g.drawImage(img, 0,0,this);
 				break;
-			
 			case 확대:
-				g.drawImage(img, 0, 0,
-						img.getWidth(this) * 2, img.getHeight(this)* 2,0
-						,0, img.getWidth(this),img.getHeight(this),
+				g.drawImage(img, 
+						0, 0,img.getWidth(this) * 2,
+						img.getHeight(this)* 2,0,0
+						,img.getWidth(this),img.getHeight(this),
 						this);
+				
 				break;
-			
 			case 축소:
 				g.drawImage(img, 0, 0, 
 						img.getWidth(this) / 2, img.getHeight(this) / 2,0
 						,0, img.getWidth(this),img.getHeight(this)
 						,this);
 				break;
-				
 			case 상하:
 				g.drawImage(img,0, img.getHeight(this), 
 						img.getWidth(this), 0, 0,
 						0, img.getWidth(this), img.getHeight(this),
 						this);
 				break;
-				
 			case 좌우:
 				g.drawImage(img,img.getWidth(this)
 						,0,0,img.getHeight(this)
 						,0,0,img.getWidth(this)
 						,img.getHeight(this),this);
 				break;
-				
 			case 전부:
 				g.drawImage(img, img.getHeight(this), img.getWidth(this)
 						, 0, 0, 0, 

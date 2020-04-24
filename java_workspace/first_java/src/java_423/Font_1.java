@@ -9,7 +9,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class Font_1 {
+public class Font_1 extends WindowAdapter {
 	public static void main(String[] args) {
 		
 		XCanvas canvas = new XCanvas();
