@@ -32,6 +32,7 @@ public class Java2D_2 extends Frame{
 	public void paint(Graphics g) {
 		Graphics2D g2 = (Graphics2D) g;
 		
+		// BasicStroke => 선의 두께
 		g2.setStroke(new BasicStroke(7));
 		g2.setColor(Color.blue);
 		g2.draw(rect);
@@ -39,7 +40,7 @@ public class Java2D_2 extends Frame{
 		g2.setStroke(new BasicStroke(3));
 		g2.setColor(Color.red);
 		g2.draw(circle);
-	
+		
 		g2.setStroke(new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER,10, pattern, 0));
 		g2.setColor(Color.black);
 		g2.draw(line);
@@ -49,4 +50,4 @@ public class Java2D_2 extends Frame{
 		new Java2D_2("Java 2D Test~~");
 	}
 	
-}
+}	
