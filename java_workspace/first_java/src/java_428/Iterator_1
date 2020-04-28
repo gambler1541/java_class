@@ -8,7 +8,7 @@ iterator()는 Collection 인터페이스에 정의된 메소드 이므로 Collection 인터페이스�
 
 	메소드											설명
 	
-	bolean hasnext()							읽어올 요소가 남아 있는지 확인 한다. 있으면 true,
+	boolean hasnext()							읽어올 요소가 남아 있는지 확인 한다. 있으면 true,
 	
 	Object next()								다음 요소를 읽어 온다. next()를 호출하기 전에 hasNext()를 호출해서
 												읽어올 요소가 있는지 확인한다.

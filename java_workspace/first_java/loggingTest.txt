@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-04-28T13:35:26</date>
+  <millis>1588048526972</millis>
+  <sequence>0</sequence>
+  <logger>java_428.Log_3</logger>
+  <level>INFO</level>
+  <class>java_428.Log_3</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>info 레벨 메시지11</message>
+</record>
+<record>
+  <date>2020-04-28T13:35:27</date>
+  <millis>1588048527018</millis>
+  <sequence>1</sequence>
+  <logger>java_428.Log_3</logger>
+  <level>FINE</level>
+  <class>java_428.Log_3</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>fine 레벨 메시지 22</message>
+</record>
+<record>
+  <date>2020-04-28T13:35:27</date>
+  <millis>1588048527018</millis>
+  <sequence>2</sequence>
+  <logger>java_428.Log_3</logger>
+  <level>FINEST</level>
+  <class>java_428.Log_3</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>finest 레벨 메시지 33</message>
+</record>
+</log>

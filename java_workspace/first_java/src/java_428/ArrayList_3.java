@@ -14,7 +14,7 @@ public class ArrayList_3 {
 		numbers.add("40");
 		System.out.println("add(°ª)");
 		System.out.println(numbers);
-		
+
 		numbers.add(1, "50");
 		System.out.println("\nadd(ÀÎµ¦½º °ª)");
 		System.out.println(numbers);
