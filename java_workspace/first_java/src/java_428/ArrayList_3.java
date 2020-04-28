@@ -32,7 +32,7 @@ public class ArrayList_3 {
 		System.out.println("\nindexof()");	//찾는 값이 없다면 -1을 리턴(있다면 인덱스 리턴)
 		System.out.println(numbers.indexOf("45"));
 		
-		Iterator it = numbers.iterator();
+		Iterator<String> it = numbers.iterator();	
 		
 		System.out.println("\niterator");
 		
@@ -46,8 +46,15 @@ public class ArrayList_3 {
 		System.out.println(numbers);
 		
 		System.out.println("\nfor each");
+		
+		// 향상된 For문(배열과 colletion에 사용)
 		for (String value : numbers){
 			System.out.println(value);
 		}
+		
+		System.out.println("\nfor");
+		for (int i = 0; i < numbers.size(); i++) {
+			System.out.println(numbers.get(i));
+		} 
 	}
 }

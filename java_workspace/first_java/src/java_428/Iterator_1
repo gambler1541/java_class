@@ -15,5 +15,3 @@ iterator()는 Collection 인터페이스에 정의된 메소드 이므로 Collection 인터페이스�
 												
 	void remove()								next()로 읽어온 요소를 삭제 한다.
 												next()를 호출한 다음에 remove()를 호출한다.
-												
-		
