@@ -1,4 +1,4 @@
-package java_428;
+ package java_428;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,7 +14,16 @@ public class ArrayList_3 {
 		numbers.add("40");
 		System.out.println("add(°ª)");
 		System.out.println(numbers);
-
+		
+		
+		String a = "asdfasdf";
+		
+		System.out.println(a.length());
+		
+		String[] a1 = new String[10];
+		
+		System.out.println(a1.length);
+		
 		numbers.add(1, "50");
 		System.out.println("\nadd(ÀÎµ¦½º °ª)");
 		System.out.println(numbers);
