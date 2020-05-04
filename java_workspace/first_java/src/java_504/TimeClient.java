@@ -12,7 +12,7 @@ public class TimeClient {
 		
 		String server_ip;
 		Date date = null;
-		int port = 7777;
+		int port = 1995;
 		try {
 			BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
 			
